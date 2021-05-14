@@ -11,6 +11,7 @@ const getById = async (userId) => {
 
 const createUser = async ({ name, login, password }) => {
   const user = await new User({ name, login, password });
+  users.push(user);
   return user;
 }
 
